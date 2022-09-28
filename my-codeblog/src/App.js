@@ -10,7 +10,11 @@ function App() {
     <div className="App">
       <h1>My Code Blog</h1>
       <div id="page-body">
-        Welcome to my blog!
+        <HomePage />
+        <AboutPage />
+        <ArticleListPage />
+        <ArticlePage />
+        <NotFoundPage />
       </div>
     </div>
   );
