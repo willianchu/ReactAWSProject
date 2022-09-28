@@ -1,7 +1,15 @@
 # ReactAWSProject
 
-I'm using node v17.9.1
+This project creates my personal blog that its based in AWS platform
 
-setup with generator create react app
-npx create-react-app my-codeblog
+* node v17.9.1
+
+* npm install react-router-dom
+
+<BrowserRouter>
+  <Routes>
+    <Route path="" element{<page>}>
+    </Route>
+  <Routes>
+</BrowserRouter>
 
