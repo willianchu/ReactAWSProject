@@ -7,8 +7,8 @@ const ArticlePage = () => {
   return(
     <>
     <h1>{article.title}</h1>
-    {article.content.map(paragraph => (
-      <p>{paragraph}</p>
+    {article.content.map((paragraph, index) => (
+      <p key={index}>{paragraph}</p>
     ))}
     </>
   );
