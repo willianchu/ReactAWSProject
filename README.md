@@ -13,4 +13,6 @@ This project creates my personal blog that its based in AWS platform
   <Routes>
 </BrowserRouter>
 
-NavBar.js - (component)
+NavBar.js - (Link)react-router-dom
+
+ArticlePage.js - (useParams)react-router-dom
