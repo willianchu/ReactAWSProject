@@ -16,3 +16,11 @@ This project creates my personal blog that its based in AWS platform
 NavBar.js - (Link)react-router-dom
 
 ArticlePage.js - (useParams)react-router-dom
+
+Back-end Node V17.9.1
+
+npm init -y
+npm install express
+in package.json
+add "type":"module",
+
