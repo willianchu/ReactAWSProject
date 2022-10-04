@@ -18,7 +18,7 @@ NavBar.js - (Link)react-router-dom
 ArticlePage.js - (useParams)react-router-dom
 
 
-Back-end Node V17.9.1
+* Back-end Node V17.9.1
 
 npm init -y
 npm install express
@@ -33,7 +33,7 @@ create a script in package.json
 
 npm run dev (shortcut)
 
-Mongo DB Version 3.6.3
+* Mongo DB Version 3.6.3
 start
 sudo start mongodb 
 or
@@ -48,7 +48,7 @@ db.articles.find({upvotes: 0}).pretty()
 npm install mongodb
 
 
-AXIOS Front-end
+* AXIOS Front-end
 
 npm install axios
 
