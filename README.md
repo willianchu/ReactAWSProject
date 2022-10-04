@@ -43,6 +43,17 @@ mongo (use react-blog-db)
 db.articles.insertMany( JSON.parse(articles) )
 
 to check
-db.articles.find({}).pretty()
+db.articles.find({upvotes: 0}).pretty()
+
+npm install mongodb
+
+
+AXIOS Front-end
+
+npm install axios
+
+Fix CORS Error
+package.json "proxy": "http://localhost:8000",
+
 
 
