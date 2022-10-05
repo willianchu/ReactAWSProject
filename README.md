@@ -5,6 +5,7 @@ This project creates my personal blog that it will based in AWS platform
 * node v17.9.1
 
 * npm install react-router-dom
+npm start
 
 <BrowserRouter>
   <Routes>

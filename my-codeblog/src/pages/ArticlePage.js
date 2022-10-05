@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import NotFoundPage from './NotFoundPage';
+import CommentsList from '../components/CommentsList';
 import articles from './article-content';
 
 
@@ -23,6 +24,7 @@ const ArticlePage = () => {
   if(!article) {
     return <NotFoundPage />
   }
+  console.log(articleInfo.comments);
   return(
     <>
     <h1>{article.title}</h1>
@@ -30,6 +32,7 @@ const ArticlePage = () => {
     {article.content.map((paragraph, index) => (
       <p key={index}>{paragraph}</p>
     ))}
+    <CommentsList comments={articleInfo.comments} />
     </>
   );
 }
