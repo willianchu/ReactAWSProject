@@ -6,13 +6,13 @@ body {
 
 .App {
   background-image: url("scienceworld.jpg");
-  height: 100vh;
   width: 100vw;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 
 button {
@@ -35,7 +35,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: cornsilk
 }
 
 nav ul {
@@ -73,7 +73,7 @@ nav a:hover {
 
 .article-list-item {
   text-decoration: none;
-  color: black;
+  color: aliceblue;
   padding: 16px 0 0 0;
 }
 

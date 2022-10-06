@@ -1,10 +1,9 @@
 const articles = [
   {
-      name: 'learn-react',
-      title: 'The Fastest Way to Learn React',
+      name: 'capilano-bridge',
+      title: 'Capilano Suspension Bridge Park',
       content: [
-          `Welcome! Today we're going to be talking about the fastest way to
-          learn React. We'll be discussing some topics such as proin congue
+          `Welcome! Today we're going to be talking about Capilano Suspension Bridge Park. We'll be discussing some topics such as proin congue
           ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
           Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
           non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
@@ -24,12 +23,10 @@ const articles = [
           consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
       ]
   },    {
-      name: 'learn-node',
-      title: 'How to Build a Node Server in 10 Minutes',
+      name: 'grouse-mountain',
+      title: 'Grouse Mountain - The Peak of Vancouver',
       content: [
-          `In this article, we're going to be talking looking at a very quick way
-          to set up a Node.js server. We'll be discussing some topics such as proin congue
-          ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
+          `In this article, we're going to be talking Grouse Mountain - The Peak of Vancouver. Ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
           Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
           non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
           eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 
@@ -48,12 +45,10 @@ const articles = [
           consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
       ]
   },     {
-      name: 'mongodb',
-      title: 'Learn MongoDB',
+      name: 'quay-market',
+      title: 'Lonsdale Quay Market',
       content: [
-          `Today is the day I talk about something which scares most people: resumes.
-          In reality, I'm not sure why people have such a hard time with proin congue
-          ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
+          `Today is the Lonsdale Quay Market. Ligula id risus posuere, vel eleifend ex egestas. Sed in turpis leo. 
           Aliquam malesuada in massa tincidunt egestas. Nam consectetur varius turpis, 
           non porta arcu porttitor non. In tincidunt vulputate nulla quis egestas. Ut 
           eleifend ut ipsum non fringilla. Praesent imperdiet nulla nec est luctus, at 

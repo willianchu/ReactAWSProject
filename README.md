@@ -58,3 +58,8 @@ package.json "proxy": "http://localhost:8000",
 
 
 
+* npm install firebase
+
+
+
+
