@@ -64,3 +64,4 @@ package.json "proxy": "http://localhost:8000",
 * deployment front-end*
 npm run build
 
+npm install dotenv
