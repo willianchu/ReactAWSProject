@@ -41,19 +41,35 @@ app.get('/api/articles/:name', async (req, res) => {
   } else {
     res.status(404).send('Not found');
   }
+});
 
+app.use((req, res, next) => {
+  if (req.user) {
+    next();
+    } else {
+      res.status(401).send('Unauthorized');
+    }
 });
 
 app.put('/api/articles/:name/upvote', async (req, res) => {
   const { name } = req.params;
+  const { uid } = req.user;
   
-
-  await db.collection('articles').updateOne({ name }, { '$inc': { upvotes: 1 } });
-
   const article = await db.collection('articles').findOne({ name });
+   
+  if(!article) {
+    const upvotesIds = article.upvoteIds || [];
+    const canUpvote = uid && !upvotesIds.includes(uid);
 
-  if(article) {
-    res.json(article);
+    if (canUpvote) {
+      await db.collection('articles').updateOne({ name }, { 
+          '$inc': { upvotes: 1 },
+          '$push': { upvoteIds: uid }, 
+        });
+    }
+    
+    const updatedArticle = await db.collection('articles').findOne({ name });
+    res.json(updatedArticle);
   } else {
     res.send('That article doesn\'t exist');
   }
