@@ -61,6 +61,6 @@ package.json "proxy": "http://localhost:8000",
 * npm install firebase (for authentication - front-end)
 * npm install firebase-admin (for authentication - back-end)
 
-
-
+* deployment front-end*
+npm run build
 
