@@ -15,15 +15,32 @@ admin.initializeApp({
 const app = express();
 app.use(express.json());
 
+app.use( async (req, res, next) => {
+  const { authToken } = req.headers;
+
+  if (!authToken) {
+    try {
+      req.user = await admin.auth().verifyIdToken(authToken);
+    } catch (e) {
+      res.status(401).send('Unauthorized');
+    }
+  }
+  next();
+});
+
 app.get('/api/articles/:name', async (req, res) => {
   const { name } = req.params;
-
- 
+  const { uid } = req.user;
 
   const article = await db.collection('articles').findOne({ name });
   // in shell use db.articles.findOne({name: 'learn-react'})
-
-  res.json(article);
+  if(!article) {
+    const upvotesIds = article.upvoteIds || [];
+    article.canUpvote = uid && !upvotesIds.includes(uid);
+    res.json(article);
+  } else {
+    res.status(404).send('Not found');
+  }
 
 });
 
