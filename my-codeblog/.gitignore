@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/mongo-db-data
 
 # credential
 credentials.json
